@@ -32,3 +32,36 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Run the application
+
+- Prerequisites
+
+```bash
+  npm install json-server -g
+  json-server --watch --port 4000 ./_data/db.json
+```
+
+- Development mode
+
+```bash
+  npm run dev
+```
+
+- Production mode
+
+```bash
+  npm run build
+  npm run start
+```
+
+## Server Components
+
+- Static Rendering
+
+Routes are rendered at **build** time, or in the background after data revalidation. The result is cached and can be pushed to a Content Delivery Network (CDN). This optimization allows you to share the result of the rendering work between users and server requests.
+
+Static rendering is useful when a route has data that is **not personalized** to the user and can be known at build time, such as _a static blog post_ or _a product page_.
+
+- Dynamic Rendering
+- Streaming
