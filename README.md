@@ -87,3 +87,18 @@ Server component - Rendered on the server. No hydration needed.
 
 ![alt text](image-2.png)
 ![alt text](image-3.png)
+
+## Fetching and Revalidating Data
+
+### TicketList page
+
+Tickets should be constantly being updated and some of them could be very urgent, so opt out of data being cached at all. Set **_revalidate_** to **_zero_**, data never be cached and it always refresh.
+
+```js
+const res = await fetch('http://localhost:4000/tickets', {
+  next: {
+    // use 0 to opt out of using cache
+    revalidate: 0,
+  },
+});
+```
