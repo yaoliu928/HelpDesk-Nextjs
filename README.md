@@ -1,4 +1,4 @@
-## Run the application
+## Run The Application
 
 - Prerequisites
 
@@ -20,7 +20,9 @@
   npm run start
 ```
 
-## [Server Rendering Strategies](https://nextjs.org/docs/app/building-your-application/rendering/server-components#server-rendering-strategies)
+## Main Concepts
+
+### [Server Rendering Strategies](https://nextjs.org/docs/app/building-your-application/rendering/server-components#server-rendering-strategies)
 
 - Static Rendering
 
@@ -38,22 +40,22 @@ Dynamic rendering is useful when a route has data that is **_personalized_** to 
 
 Streaming enables **_progressively rendering UI from the server_**. Work is split into chunks and streamed to the client as it becomes ready. This allows the user to see parts of the page immediately, before the entire content has finished rendering.
 
-![alt text](image.png)
+![alt text](./public/image.png)
 
 Start streaming route segments using _loading.js_ and UI components with _React Suspense_.
 
-![alt text](image-1.png)
+![alt text](./public/image-1.png)
 
-## Client Component vs Server Component
+### Client Component vs Server Component
 
 Client component - Rendered on the server. Hydrated in the browser.
 
 Server component - Rendered on the server. No hydration needed.
 
-![alt text](image-2.png)
-![alt text](image-3.png)
+![alt text](./public/image-2.png)
+![alt text](./public/image-3.png)
 
-## Fetching and Revalidating Data
+## Implementation
 
 ### TicketList page - Dynamic Rendering
 
