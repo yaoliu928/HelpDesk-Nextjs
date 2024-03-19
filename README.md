@@ -22,7 +22,7 @@
 
 ## Main Concepts
 
-### [Server Rendering Strategies](https://nextjs.org/docs/app/building-your-application/rendering/server-components#server-rendering-strategies)
+### Server Rendering Strategies [🔗](https://nextjs.org/docs/app/building-your-application/rendering/server-components#server-rendering-strategies)
 
 - Static Rendering
 
