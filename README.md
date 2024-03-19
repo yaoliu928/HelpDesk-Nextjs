@@ -105,3 +105,7 @@ You can pre-render loading indicators to provide a better user experience. The n
   <TicketList />
 </Suspense>
 ```
+
+### CreateForm Component - Client Component
+
+Client Components allow you to write interactive UI that is prerendered on the server and can use client JavaScript to run in the browser. To use Client Components, you can add the React `use client` directive at the top of a file, above your imports.
