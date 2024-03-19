@@ -95,3 +95,13 @@ export async function generateStaticParams() {
   }));
 }
 ```
+
+### Suspense in TicketList page
+
+You can pre-render loading indicators to provide a better user experience. The new content is automatically swapped in once rendering is complete. [Loading UI and Streaming](https://nextjs.org/docs/app/building-your-application/routing/loading-ui-and-streaming)
+
+```js
+<Suspense fallback={<Loading />}>
+  <TicketList />
+</Suspense>
+```
